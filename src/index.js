@@ -26,7 +26,6 @@ app.use(
 
 app.use('/api/auth', authRoute);
 app.use("/", swaggerUi.serve, swaggerUi.setup(openApiDocumentation));
-
 app.use("/swagger", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 
